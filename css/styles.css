@@ -1,0 +1,314 @@
+:root {
+    --primary: #6bff57;
+    --primary-back: #b7ffac;
+    --secondary: #ececec;
+    --secondary-back: #dadada;
+    --text-color: #fff;
+    --text-secondary: #000;
+    --text-tetiary: #5d5d5d;
+    --icon-color:  #17c400;
+}
+
+* {
+    font-family: "Ubuntu";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navegation {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-links {
+
+    background-color: #dadada;
+    height: 100px;
+}
+
+.list-liks {
+    display: flex;
+    flex-direction: row;
+}
+
+.links {
+    padding: 0 25px;
+}
+
+.links a {
+    color: black;
+}
+
+.orcament {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/inicio.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.description h2,
+.description .about-orcament {
+    color: var(--primary);
+}
+
+.description h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.description .about-orcament {
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.orcament-form {
+    background-color: var(--secondary);
+    padding: 2em;
+    max-width: 22%;
+}
+
+.orcament-form p {
+    font-size: 1.5em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}
+
+.orcament-form-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .8em;
+}
+
+.orcament-form-input label {
+    color: var(--text-tetiary);
+    margin-bottom: .3em;
+    font-weight: bold;
+}
+
+.orcament-form-input input,
+.orcament-form-input select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: .6;
+    border-radius: 50px;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.all-benefits {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--secondary-back);
+}
+
+.all-benefits h2{
+    text-align: center;
+    font-weight: 500;
+    padding: 2em;
+}
+
+.container-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.all-benefits .btn,
+.all-plans .btn {
+    text-align: center;
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 350px;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: .6;
+    border-radius: 50px;
+}
+
+.all-benefits .btn:hover, 
+.all-plans .btn:hover{
+    opacity: 1;
+}
+
+.benefits {
+    display: flex;
+}
+
+.benefit{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 85vh;
+}
+
+.benefit i {
+    margin-top: 0.3em;
+    font-size: 104px;
+    color: var(--icon-color);
+}
+
+.benefit h3 {
+    margin-bottom: 2em;
+}
+
+.benefit span {
+    font-weight: bold;
+}
+
+#costs {
+    background-color: var(--secondary);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 1000px;
+    height: 300px;
+    margin: 4em;
+}
+
+#shield {
+    background-color: var(--secondary);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 1000px;
+    height: 300px;
+    margin: 4em;
+}
+
+#time {
+    background-color: var(--secondary);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 1000px;
+    height: 300px;
+    margin: 4em;
+}
+
+#people {
+    background-color: var(--secondary);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 1000px;
+    height: 300px;
+    margin: 4em;
+}
+
+.all-plans h2 {
+    background-color: var(--secondary);
+    text-align: center;
+    font-weight: 500;
+    padding: 2em;
+}
+
+.plans {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.plan {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-tetiary);
+}
+
+.plan .plan-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+#brass {
+    background-image: url("../img/barra-bronze.jpg");
+}
+
+#silver {
+    background-image: url("../img/barra-prata.jpg");
+}
+
+#gold {
+    background-image: url("../img/barras-de-ouro.jpg");
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    height: 230px;
+}
+
+.links-up,
+.interprise,
+.about {
+    margin-top: 2em;
+}
+
+.interprise h4,
+.about h4 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.interprise a,
+.about a {
+    color: silver;
+}
+
+.links-up a {
+    color: var(--text-color);
+    padding-bottom: .5em;
+}
+
+.links-up,
+.interprise,
+.about  {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.directs {
+    text-align: center;
+    background-color: #000;
+    height: 50px;
+    color: var(--text-color);
+}
